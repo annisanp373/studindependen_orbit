@@ -7,7 +7,6 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import re
 import string
 from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 import spacy
 import time
@@ -26,7 +25,6 @@ nltk.download('punkt')
 # Inisialisasi model SpaCy dan utilitas lainnya
 nlp = spacy.load("en_core_web_sm")
 stop_words = set(stopwords.words('english'))
-stemmer = PorterStemmer()
 analyser = SentimentIntensityAnalyzer()
 
 # Fungsi Case Folding
