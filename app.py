@@ -9,6 +9,7 @@ import string
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import spacy
+from spacy.cli import download
 import time
 import seaborn as sns
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -23,6 +24,7 @@ nltk.download('stopwords')
 nltk.download('punkt')
 
 # Inisialisasi model SpaCy dan utilitas lainnya
+download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 stop_words = set(stopwords.words('english'))
 analyser = SentimentIntensityAnalyzer()
