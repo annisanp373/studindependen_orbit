@@ -5,6 +5,7 @@ google-play-scraper==1.2.7
 nltk==3.9.1
 vaderSentiment==3.3.2
 spacy==3.8.2
+en-core-web-sm==3.8.2
 seaborn==0.13.2
 scikit-learn==1.5.2
 imbalanced-learn==0.12.4
